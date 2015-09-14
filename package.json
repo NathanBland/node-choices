@@ -1,0 +1,22 @@
+{
+  "name": "choices",
+  "version": "1.0.0",
+  "description": "pick your flavors!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ice",
+    "cream",
+    "flavors"
+  ],
+  "author": "Nathan Bland",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "mongoose": "^4.1.6",
+    "nunjucks": "^2.0.0"
+  }
+}

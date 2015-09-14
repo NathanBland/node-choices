@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block stylesheets %}
+<link rel="stylesheet" href="/css/site.css">
+{% endblock %}
+{% block body %}
+<article class="">
+    <h1>Tell us about you!</h1>
+    <form class="pure-form pure-form-stacked" action="/submit" method="post">
+      <label >Email:</label>
+      <input name="email" type="email" placeholder="someone@example.com" required>
+      <label class="pure-checkbox">What flavors do you like?
+                <input name="flavors" value="chocolate" type="checkbox">Chocolate
+                <input name="flavors" value="Vanilla" type="checkbox">Vanilla
+                <input name="flavors" value="Strawberry" type="checkbox">Strawberry
+                <input name="flavors" value="Cherry " type="checkbox">Cherry
+      </label>
+
+      <label for="option-one" class="pure-radio">
+        Coke or Pepsi?<br/>
+        <input id="option-one" type="radio" name="cola" value="coke" checked>
+        Coke
+      </label>
+
+      <label for="option-two" class="pure-radio">
+          <input id="option-two" type="radio" name="cola" value="pepsi">
+          Pepsi
+      </label>
+      <button type="submit">Shout it!</buton>
+    </form>
+</article>
+{% endblock %}
+{% block scripts %}
+{% endblock %}
